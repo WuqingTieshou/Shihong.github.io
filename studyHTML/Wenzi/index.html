@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./Wenzi.css"/>
+		<link rel="stylesheet" type="text/css" href="../第三方插件/font-awesome-4.7.0/css/font-awesome.css"/>
+		<script src="../第三方插件/jquery-1.12.4.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#indexspan').hide();
+				$('#fndexspan').hide();
+			})
+			
+			$(function(){
+				$('#gear').on('mouseenter',function(){
+					$('#indexspan').fadeIn(50);
+				})
+				$('#indexspan').on('mouseleave',function(){
+					$('#indexspan').fadeOut(50);
+				})
+			
+				$('#mobile').on('mouseenter',function(){
+					$('#fndexspan').fadeIn(50);
+				})
+				$('#mobile').on('mouseleave',function(){
+					$('#fndexspan').fadeOut(50);
+				})
+				
+				//文件导入
+				$('#FexText').load('1.txt');
+				
+				$('#pret').on('click',function(){
+					$('#FexText').load('1.txt');
+				})
+				
+				$('#next').on('click',function(){
+					$('#FexText').load('2.txt');
+				})
+				//实现主题切换
+				
+				$('#bule').on('click',function(){
+					$('#FexText').css('background-color','#C6E2FF');
+				})
+				$('#green').on('click',function(){
+					$('#FexText').css('background-color','#C1FFC1');
+				})
+				$('#pink').on('click',function(){
+					$('#FexText').css('background-color','#FFE4E1');
+				})
+				$('#gray').on('click',function(){
+					$('#FexText').css('background-color','#EBEBEB');
+				})
+				
+				$('#big').on('click',function(){
+					$('#FexText').css('font-size','18px');
+				})
+				$('#middle').on('click',function(){
+					$('#FexText').css('font-size','14px');
+				})
+				$('#small').on('click',function(){
+					$('#FexText').css('font-size','10px');
+				})
+				
+				$('#songti').on('click',function(){
+					$('#FexText').css('font-family','宋体');
+				})
+				
+				$('#kaiti').on('click',function(){
+					$('#FexText').css('font-family','华文行楷');
+				})
+				
+				
+			})
+			
+			
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div id="picture">
+				<font face="江西拙楷">绪键<br>
+				书库</font>
+			</div>
+			<div id="TexT">
+				<i>
+				<font face="优设标题黑" size="5px">绪键互动传媒网</font><br>
+				<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;XJ<font color="#B22222">ACG</font>.com</font>
+				</i>
+			</div>
+		</div>		  
+		<div id="div1">
+			<font size="2px" color="" face="阿里巴巴普惠体">
+			<a href="
+			http://127.0.0.1:8848/Web%E8%AE%BE%E8%AE%A1%E5%A4%A7%E4%BD%9C%E4%B8%9A/%E9%A6%96%E9%A1%B5/index.html"
+			><i class="fa fa-home"></i>首页</a> >
+			<a href="
+			http://127.0.0.1:8848/Web%E8%AE%BE%E8%AE%A1%E5%A4%A7%E4%BD%9C%E4%B8%9A/fourhtml/stack/stack.html"
+			>书库</a> >
+			<a href="../read/index.html">这个修士来自未来</a>
+			</font>
+		</div>
+		<div id="div2">
+			<div id="Tleft">
+				<div class="spanbtn"><a href="../Tex/Tex.html"><i class="fa fa-server"></i></a></div>
+					<div id="indexspan">
+						<ul>
+							<li style="font-size: 30px;margin-top: -10px;">设置</li>
+							<li>阅读主题
+								<span class="scolor"><i class="fa fa-circle" style="color: #C6E2FF;" id="bule"></i></span>
+								<span class="scolor"><i class="fa fa-circle" style="color: #C1FFC1;" id="green"></i></span>
+								<span class="scolor"><i class="fa fa-circle" style="color: #FFE4E1;" id="pink"></i></span>
+								<span class="scolor"><i class="fa fa-circle" style="color: #EBEBEB;" id="gray"></i></span>
+							</li>
+							<li>字体大小
+								<span class="famliy" id="big">大</span>
+								<span class="famliy" id="middle">中</span>
+								<span class="famliy" id="small">小</span>
+							</li>
+							<li>字体格式
+								<span class="famliy" id="kaiti">楷体</span>
+								<span class="famliy" id="songti">宋体</span>
+							</li>
+						</ul>
+					</div>
+				<div class="spanbtn"  id="gear"><i class="fa fa-gear"></i></div>
+					<div id="fndexspan">
+						<img src='../img/二维码.png'>
+					</div>
+				<div class="spanbtn"><i class="fa fa-mobile" style="font-size: 100px;" id="mobile"></i></div>
+				<div class="spanbtn"><a href="../read/index.html"><i class="fa fa-book"></i></a></div>
+			</div>
+			<div id="Tright">
+				<div id="TitleText">
+					<h1>第一卷</h1>
+				</div>
+				<div id="FexText">
+				</div>
+			</div>
+			<div id="Tleft" style="margin-top: 188px;">
+				<div class="spanbtn"><i class="fa fa-thumbs-o-up"></i></div>
+				<div class="spanbtn"><i class="fa fa-commenting"></i></div>
+				<div class="spanbtn"><i class="fa fa-step-backward" id="pret"></i></div>
+				<div class="spanbtn"><i class="fa fa-step-forward" id="next"> </i></div>
+			</div>
+		</div>
+	</body>
+</html>

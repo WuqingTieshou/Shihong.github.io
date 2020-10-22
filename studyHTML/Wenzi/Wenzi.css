@@ -1,0 +1,135 @@
+body{
+	margin: 0;
+	padding: 0;
+	background:#EBEBEB;
+}
+.header{
+	width: 100%;
+	height: 80px;
+	background-color: #F5DEB3;
+	overflow: hidden;
+}
+#picture{
+	text-align: center;
+	margin-left: 200px;
+	height: 78px;
+	width: 80px;
+	background-color: #CC3300;
+	border-radius: 10px;
+	opacity: 0.9;
+	font-size: 28px;
+	float: left;
+	box-shadow: 0 0 12px 5px rgba(0,0,0,0.5);
+}
+#TexT{
+	width: 220px;
+	height: 80px;
+	padding-left: 10px;
+	padding-top: 10px;
+	float: left;
+}
+#div1{
+	margin-left: 200px;
+	width: 100%;
+	height: 20px;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+#div1 a:hover{
+	color: #CC3300;
+}
+#div2{
+	margin-left: 200px;
+	width:1100px ;
+	height: 600px;
+	float: left;
+}
+#Tleft{
+	width: 100px;
+	height: 412px;
+	float: left;
+}
+#Tright{
+	width: 800px;
+	height: 592px;
+	background-color: #FAFAFA;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 3px;
+}
+.spanbtn{
+	background-color: #FAFAFA;
+	width: 98px;
+	height: 98px;
+	float: left;
+	margin-left: 1px;
+	margin-top:3px ;
+	box-shadow: 0  14px 14px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	text-align: center;
+	font-size: 70px;
+	color: #545454;
+	cursor: pointer;
+}
+#TitleText{
+	font-size: 10px;
+	margin-left: 5px;
+	width: 700px;
+	height: 40px;
+	font-family: "华文行楷";
+	float: left;
+}
+#FexText{
+	font-size: 3px ;
+	width:700px;
+	height: 500px;
+	margin-left: 50px;
+	float: left;
+	margin-top: 20px;
+}
+#indexspan{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background-color:#F8F8FF;
+	margin-top: 3px;
+	margin-left: 100px;
+	display: block;
+}
+#fndexspan{
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	background-color:#F8F8FF;
+	margin-left: 100px;
+	margin-top: 103px;
+	display: block;
+	text-align: center;
+	padding-top: 50px;
+}
+#fndexspan img{
+	width: 50%;
+	height: 60%;
+}
+#indexspan ul{
+	list-style: none;	
+	margin-left: -10px;
+}
+#indexspan ul li{
+	padding-top: 30px;
+	height: 20px;
+}
+.scolor{
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+.famliy{
+	width: 20px;
+	height: 20px;
+	padding-left: 20px;
+	cursor: pointer;
+}

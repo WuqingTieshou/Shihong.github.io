@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>这个修士来自未来</title>
+		<link rel="stylesheet" type="text/css" href="./Tex.css"/>
+	
+	
+		<script type="text/javascript" src="../第三方插件/jquery-1.12.4.js"></script>
+		<script>
+			$(function(){
+				$('#aadd').on('click',function(){
+					$('#prtext1').clone(true).appendTo("#text1");
+				})
+				$('#remoe').on('click',function(){
+					$("#text1 div:last").remove();
+				})
+			
+
+				function drag() {
+				    var obj = $('#a1');
+				    obj.bind('mousedown', start);
+				    function start(e) {
+				        var ol = obj.offset().left;
+				        var ot = obj.offset().top;
+				        deltaX = e.pageX - ol;
+				        deltaY = e.pageY - ot;
+				        $(document).bind({
+				            'mousemove': move,
+				            'mouseup': stop
+				        });
+				        return false;
+				    }
+				    function move(e) {
+				        obj.css({
+				            "left": (e.pageX - deltaX),
+				            "top": (e.pageY - deltaY)
+				        });
+				        return false;
+				    }
+				    function stop() {
+				        $(document).unbind({
+				            'mousemove': move,
+				            'mouseup': stop
+				        });
+				    }
+				}	
+				$('.prtext').darg();
+			})	
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<div id="picture">
+				<font face="江西拙楷">绪键<br>
+				书库</font>
+			</div>
+			<div id="TexT">
+				<i>
+				<font face="优设标题黑" size="5px">绪键互动传媒网</font><br>
+				<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;XJ<font color="#B22222">ACG</font>.com</font>
+				</i>
+			</div>
+		</div>		  
+		<div id="div1">
+			<font size="2px" color="" face="阿里巴巴普惠体">
+			<a href="
+			http://127.0.0.1:8848/Web%E8%AE%BE%E8%AE%A1%E5%A4%A7%E4%BD%9C%E4%B8%9A/%E9%A6%96%E9%A1%B5/index.html"
+			>首页</a> >
+			<a href="
+			http://127.0.0.1:8848/Web%E8%AE%BE%E8%AE%A1%E5%A4%A7%E4%BD%9C%E4%B8%9A/fourhtml/stack/stack.html"
+			>书库</a> >
+			<a >这个修士来自未来</a>
+			</font>
+		</div>
+		<hr class="divid">
+		<div id="BigTitle">
+			<h1 class="bookname">这个修士来自未来</h1>
+			<button type="button" class="mainbtn" id="pingjia">评价本书</button>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="button" class="mainbtn" id="shoucang">收藏本书</button>
+		</div>
+		<hr class="divid">
+		<div class="novelist">
+			<div class="headnovel">
+				<h1>第一卷</h1>
+			</div>
+			<div class="noveltext"id="text1">
+				<div class="prtext" id="prtext1" onclick="window.open('../Wenzi/index.html')">
+				
+				</div>
+			</div>
+		</div>
+		<div class="novelist">
+			<div class="headnovel">
+			</div>
+			<div class="noveltext" id="text2">
+				<button type="button" class="hbtn" id="aadd">增加</button>
+				<button type="button" class="hbtn" id="remoe">删除</button>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,103 @@
+body{
+	margin: 0;
+	padding: 0;
+	background:#F2F2F2;
+}
+.header{
+	width: 100%;
+	height: 80px;
+	background-color: #F5DEB3;
+	overflow: hidden;
+}
+#picture{
+	text-align: center;
+	margin-left: 200px;
+	height: 78px;
+	width: 80px;
+	background-color: #CC3300;
+	border-radius: 10px;
+	opacity: 0.9;
+	font-size: 28px;
+	float: left;
+	box-shadow: 0 0 12px 5px rgba(0,0,0,0.5);
+}
+#TexT{
+	width: 220px;
+	height: 80px;
+	padding-left: 10px;
+	padding-top: 10px;
+	float: left;
+}
+#div1{
+	margin-left: 200px;
+	width: 100%;
+	height: 20px;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+#div1 a:hover{
+	color: #CC3300;
+}
+.divid{
+	margin-left: 200px;
+	width: 1100px;
+	color: rgba(248,248,255,0.5);
+}
+#BigTitle{
+	margin-left: 200px;
+	width: 1100px;
+	height: 180px;
+	background-color: #FAFAFA;
+	margin-top: -15px;
+	text-align: center;
+}
+.bookname{
+	padding-top: 30px;
+}
+.mainbtn{
+	width: 110px;
+	height: 35px;
+	border-radius: 20px;
+	border: 0px;
+	background-color: #FFC125;
+	color: white;
+	cursor: pointer;
+	outline:none;
+}
+.novelist{
+	width: 1100px;
+	margin-top: 5px;
+	height: 200px;
+	margin-left: 200px;
+}	
+.headnovel{
+	width: 1100px;
+	text-align: center;
+	height: 40px;
+}
+.noveltext{
+	width: 1100px;
+	text-align: center;
+	height: 160px;
+	float: left;
+}
+.prtext{
+	width: 230px;
+	height: 65px;
+	margin-top: 10px;
+	border: solid #000000 1px;
+	float: left;
+	margin-left: 35px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.noveltext  div:hover{
+	background-color:#FFC125;
+}
+.hbtn{
+	float: left;
+	margin-left: 20px;
+	margin-top: 100px;
+}
